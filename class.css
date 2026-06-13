@@ -1,0 +1,19 @@
+.order{
+    height: 200px;
+    width: 250px;
+    border-bottom: 10px solid #ff0000;
+    background-color: #080809;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.order h1{
+    background-color: #ff0000;
+}
+.boy ul{
+    list-style-type: armenian;
+}
+td{
+    color: blue;
+    background-color: #9e2222;
+}

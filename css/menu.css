@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../images/Emi.png);
+    /* White in the middle (0%), red on the outside (100%) */
+    /* background: radial-gradient(circle, #0e0f10 0%, #0e0f10 65%); */
+}
+
+/* container section */
+.container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px 50px 40px 30px;
+    border-radius: 22px;
+    background-color: #000000;
+    color: #fff;
+}
+
+.text {
+    max-width: 500px;
+    line-height: 25px;
+}
+
+.text h1 {
+    margin-bottom: 20px;
+    color: #5e17eb;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #5c16bf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #ffffff 4px solid;
+    box-shadow: 0 0 0 8px #5c16bf;
+}
+
+.circle img {
+    width: 300px;
+    height: 240px;
+    transform: translateY(-50px);
+    rotate: 35deg;
+}
+
+/* detail section */
+.detail {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 50px;
+    padding: 30px 50px 40px 30px;
+    border-radius: 22px;
+    background-color: #000000;
+    color: #fff;
+}
+
+.detail .details {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #5c16bf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #ffffff 4px solid;
+    box-shadow: 0 0 5px #bc13fe,
+        0 0 15px #bc13fe;
+    margin-right: 30px;
+}
+
+.detail div:hover {
+    flex-grow: 10;
+    border-radius: 20px;
+}
+
+.details img {
+    width: 100px;
+    height: 100px;
+    ;
+}
+
+.details .about {
+    padding: 20px;
+    display: none;
+}
+
+.details:hover .about {
+    display: block;
+}
+
+/* detail images */
+
+/* image one */
+.img-one {
+    content: url('../images/straw.png');
+}
+
+.details:hover .img-one {
+    content: url('../images/berry.png');
+}
+
+/* image two */
+.img-two {
+    content: url('../images/lemonade.png');
+}
+
+.details:hover .img-two {
+    content: url('../images/lemon.png');
+}
+
+/* image three */
+.img-three {
+    content: url('../images/.png');
+}
+
+.details:hover .img-three {
+    content: url('../images/cola.png');
+}
+
+/* image four */
+.img-four {
+    content: url('../images/juice.png');
+}
+
+.details:hover .img-four {
+    content: url('../images/orange.png');
+}
+
+.details:hover img {
+    width: 300px;
+
+}
+
+.flex {
+    display: none;
+}
+
+/* footer */
+footer {
+    background-color: #050505;
+}
+
+/* Footer Styles */
+#footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 30px 0;
+
+}
+
+.footer-column {
+    color: #5e17eb;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 35px;
+}
+
+.footer-column ul,
+a {
+    color: #ffffff;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.footer-column a:hover,
+li:hover {
+    color: #5e17eb;
+    text-decoration: underline;
+}
+
+/* copy-right */
+.copy-right {
+    text-align: center;
+    color: #5e17eb;
+    padding: 0px 0px 30px 0px;
+}
+
+/* responsive */
+@media (max-width: 1280px) {
+
+    /* container section */
+    .container {
+        display: flex;
+        max-width: 1200px;
+        margin: 40px 20px;
+        align-items: center;
+        padding: 30px 20px 40px 0px;
+        border-radius: 22px;
+        background-color: #000000;
+        color: #fff;
+    }
+
+    .text {
+        width: 300px;
+        line-height: 25px;
+    }
+
+    .text h1 {
+        margin-bottom: 20px;
+    }
+
+    .circle {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #5c16bf;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: #ffffff 4px solid;
+        box-shadow: 0 0 0 8px #5c16bf;
+    }
+
+    .circle img {
+        width: 300px;
+        height: 240px;
+        transform: translateY(-50px);
+        rotate: 35deg;
+    }
+
+    /* details for smaller devices */
+    .detail {
+        display: flex;
+        flex-direction: column;
+        margin: 40px 50px;
+        padding: 30px 50px 40px 30px;
+        border-radius: 22px;
+        background-color: #000000;
+        color: #fff;
+    }
+
+    .details {
+        margin-bottom: 20px;
+    }
+
+    .detail div:hover {
+        width: 600px;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 930px) {
+
+    /* container section */
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .text {
+        margin-bottom: 40px;
+    }
+
+    /* details for smaller devices */
+    .detail {
+        display: none;
+    }
+
+    /* flex-div */
+    /* detail section */
+    .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 40px 20px;
+        padding: 30px 50px 40px 30px;
+        border-radius: 22px;
+        background-color: #000000;
+        color: #fff;
+    }
+
+    .flex .detail-flex {
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+        height: 400px;
+        align-items: center;
+        border: #ffffff 4px solid;
+        border-radius: 20px;
+        box-shadow: 0 0 5px #bc13fe,
+            0 0 15px #bc13fe;
+        margin-bottom: 30px;
+        overflow: hidden;
+    }
+
+    .flex .detail-flex img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .detail-flex h1 {
+        color: #5e17eb;
+    }
+
+    .detail-flex .about {
+        padding: 20px;
+    }
+
+
+    /* detail images */
+
+    /* image one */
+    .img-one {
+        content: url('../images/berry.png');
+    }
+
+    /* image two */
+    .img-two {
+        content: url('../images/lemon.png');
+    }
+
+    /* image three */
+    .img-three {
+        content: url('../images/cola.png');
+    }
+
+    /* image four */
+    .img-four {
+        content: url('../images/orange.png');
+    }
+
+}
