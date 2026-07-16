@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
 
-    body {
-        background: linear-gradient(90deg, #5e17eb 0%, #8d79e7 100%);
-    }
+body {
+    background: linear-gradient(90deg, #5e17eb 0%, #8d79e7 100%);
 }
 
 /* Hero Section */
@@ -110,4 +110,39 @@
 .tip img {
     width: 50px;
     height: 50px;
+}
+
+@media(max-width: 1115px) {
+    .hero {
+        margin: 0 0 0 130px;
+    }
+}
+
+@media(max-width: 995px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 4px;
+        padding: 50px 10px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-text {
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width: 915px) {
+    .foot {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foot .tip {
+        margin-bottom: 20px;
+    }
 }
